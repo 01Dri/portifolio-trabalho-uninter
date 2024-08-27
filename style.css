@@ -124,3 +124,15 @@ form input[type="submit"]:hover {
 .hidden {
     display: none;
 }
+
+.imagem-perfil-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.imagem-perfil-container img {
+    max-width: 150px; 
+    border-radius: 50%; 
+    border: 3px solid #333; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
