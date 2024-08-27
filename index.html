@@ -79,28 +79,7 @@
             <p>E-mail enviado com sucesso!</p>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let lastScrollTop = 0; // Armazena a posição de rolagem anterior
-            const header = document.querySelector('.header-container');
-        
-            window.addEventListener('scroll', () => {
-                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-                if (scrollTop > lastScrollTop) {
-                    // Rolagem para baixo
-                    header.style.top = "-50px"; // Ajuste a altura para o tamanho do cabeçalho
-                } else {
-                    // Rolagem para cima
-                    header.style.top = "0";
-                }
-        
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para evitar valores negativos
-            });
-        });
-        </script>
-        
+    
 
     <script src="script.js"></script>
 </body>
