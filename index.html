@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim-container">Sobre Mim</a></li>
+                <li><a href="#formacao-container">Formação</a></li>
+                <li><a href="#portifolio-container">Portfólio</a></li>
+                <li><a href="#contato-container">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="sobre-mim-container" class="section">
+        <h1>Sobre Mim</h1>
+        <p>Olá, meu nome é Diego e sou estudante de programação.</p>
+        <p>Meu foco nos estudos está sendo no desenvolvimento Back-end em Java e C#</p>
+        <p>Já faço estágio na área e estou gostando muito!!!</p>
+    </div>
+
+    <div id="formacao-container" class="section">
+        <h1>Formação</h1>
+        <p>Formação: Análise e desenvolvimento de sistemas. (Tempo restante: <label id="meses-restantes"></label>)</p>
+        <p>Idiomas: Inglês (Intermediário).</p>
+    </div>
+
+    <div id="experiencia-container" class="section">
+        <h1>Experiência Profissional</h1>
+        <p><strong>Empresa: </strong> Anexs Tecnologia (Desenvolvedor Back-end .NET Estágio - Atualmente)</p>
+        <p><strong>Empresa:</strong> Hughes (Multiplicador Técnico - 2021-2023)</p>
+    </div>
+
+    <div id="portifolio-container" class="section">
+        <h1>Portfólio</h1>
+        <p>Como meu foco nos estudos está sendo em Back-end, infelizmente não tenho projetos visuais interessantes, porém vou deixar alguns links de projetos que fiz que estão no Github e um projeto que fiz para minha namorada rodando no GitHub Pages :)</p>
+        <ul>
+            <li><a href="https://github.com/01Dri/CatvieSpringBoot">Catvie API Java/Spring</a></li>
+            <li><a href="https://github.com/01Dri/01Dri-MelLover---League-of-Legends-BOT">MelLoverBOT LoL (Discord BOT)</a></li>
+            <li><a href="https://01dri.github.io/MelCarinhos/">Mel Carinhos (GitHub Pages)</a></li>
+        </ul>
+    </div>
+
+    <div id="contato-container" class="section">
+        <h1>Contato</h1>
+        <div class="contact-container">
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <div class="redes-sociais-icones">
+                <a href="https://www.linkedin.com/in/dridev/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/01Dri" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden">
+        <div class="overlay-content">
+            <p>E-mail enviado com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
