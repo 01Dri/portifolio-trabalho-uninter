@@ -128,6 +128,7 @@ form input[type="submit"]:hover {
 .imagem-perfil-container {
     text-align: center;
     margin: 50px 0;
+    margin-bottom: 10px;
 }
 
 .imagem-perfil-container img {
