@@ -43,3 +43,25 @@ function remainingMonthToGraduation(dataFim) {
 const dataConclusao = '2026-12-01';
 const mesesRestantes = remainingMonthToGraduation(dataConclusao);
 document.getElementById('meses-restantes').innerHTML = `<strong>${mesesRestantes}</strong> meses.`;
+
+
+
+//  Uma animação para esconder o header enquanto o usuario utiliza o scroll para baixo.
+const header = document.querySelector('.header-container');
+
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header-container');
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            header.style.top = "-500px"; 
+        } else {
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+    });
+});
